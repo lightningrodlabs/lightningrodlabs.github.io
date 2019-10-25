@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Harris-Braun Enterprises</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/kqq2ctu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <button onclick="topFunction()" id="scroll-up-btn" title="Go to top"><i class="fa fa-angle-up"></i></button>
+
+    <div class="background-1" id="program">
+
+        <div class="header content-block" id="header">
+            <a class="logo" onclick="topFunction()"><img src="harris-braun_logo.png" height="40"></a>
+
+            <ul class="menu-expanded">
+                <li><a href="#about">about</a></li>
+                <li><a href="#projects">projects</a></li>
+                <li><a href="#connect">connect</a></li>
+            </ul>
+            
+            <li class="social-link"><a style="text-align:right;" target="_blank" href="https://github.com/h-be">
+                <img src="github-purple.svg" width="22" height="22" /></a></li>
+            </div> 
+
+        </div>
+
+    </div>
+
+    <div class="main content-block">
+        <h1 style="text-align:center; padding-top:4rem;">Nurturing Holochain Ecosystem</h1>
+        <h2 style="text-align:center;    
+        color: black;
+        font-size: 1.2rem;
+        font-family: 'rennerbook', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 2rem;">for expanding collective & community-driven expressive capacities through technology</h2>
+            <div style="text-align:center;">
+                <br />
+                <a href="#about" class="btn btn-outlined">about us</a>
+
+                <a href="#projects" class="btn btn-filled">our projects</a><br /><br /><br />
+            </div>
+
+    </div>
+    </div>
+
+
+    <div class="background-2" id="about">
+        <div class="main content-block">
+            <h2 style="text-align:center; line-height:3rem;">who we are</h2>
+            <p>Harris-Braun Enterprises, LLC, (H-BE) currently focuses on building
+             Holochain based distributed apps with the intent to enrich the soil 
+             where those and other Holochain apps are growing.
+
+            Founded in 2003 by Eric and Ellen Harris-Braun,
+             H-BE has a history of software and web development,
+              management consulting, building new economies,
+               and advancing midwifery.</p>
+            <p >Eric Harris-Braun designs and builds software infrastructure for the new economy. 
+                He is a co-founder of the <a target="_blank" href="http://metacurrency.org/">MetaCurrency project </a>, which is creating a platform for
+                 communities of all scales to design and deploy their own currencies, and <a target="_blank" href="https://holochain.org">Holochain</a>,
+                  which will host a full array of asset-backed, value-stable currencies,
+                   setting a new class of cryptocurrencies that will foster a more regenerative world.</p>
+            <br/>
+            <h3 style="text-align:center;">our values</h3>
+            <p style="text-align:center; color:green; line-height:1.8rem;">
+
+                    community
+                    <br/>
+                    flow
+                    <br/>
+                    nurturing
+                    <br/>
+                    earthcare
+                    <br/>
+                    senses
+                    <br/>
+                    an open and transprantent web
+                </p>
+
+            </div>
+
+            <div class="background-3" id="projects">
+
+                    <div class="main content-block">
+                        <h2 style="text-align:center;">our current projects</h1>
+                    </div>
+
+                    <div class="content-block" id="acorn">
+                            
+                                <h3>Acorn</h3>
+                                <h4>enter subtitle here</h4>
+                                <p>enter description here</p>
+                            
+                        </div>
+
+                        <div class="content-block" id="oww">
+                            
+                                <h3>Online Writing Workshop</h3>
+                                <h4>enter subtitle here</h4>
+                                <p>enter description here</p>
+                            
+                        </div>
+
+
+                    <div class="main container content-block" id="connect">
+                            <h2 style="text-align:center;">let's connect</h2>
+                            <p style="text-align:center;">simply send us a message at <a href="mailto:admin@harris-braun.com">admin@harris-braun.com</a> or fill out the form below:</p>
+                            <br/>
+                            <form method="post" action="contact.php">
+                          
+                            <div class="row">
+                            <div class="column column-left">
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Your first name">
+                            </div>
+                            <div class="column column-right">
+                              <label class="column" for="lname">Last Name</label>
+                              <input type="text" id="lname" name="lastname" placeholder="Your last name">
+                            </div>
+                            </div>
+
+
+                              <label for="email">Email</label>
+                              <input type="text" id="email" name="emailadress" placeholder="yourname@domain.com">
+                          
+                              <label for="message" class="btn btn-filled">Your Message</label>
+                              <textarea id="message" name="message" placeholder="Write your message or inquiry here" style="height:150px"></textarea>
+                          
+                              <input type="submit" value="submit">
+                          
+                            </form>
+                          </div> 
+
+                          <br />
+                    
+                <div class="background-footer">
+                        <div class="content-block footer">
+                            <p class="center">
+                                <footnote>Copyright © Harris-Braun Enterprises LLC. All rights reserved.</footnote>
+                            </p>
+                    </div>
+                </div>
+
+                    <script>
+                        // Create a clone of the menu, right next to original.
+                        $('.header').addClass('original').clone().insertAfter('.header').addClass('cloned').css('position', 'fixed').css('top', '0').css('margin-top', '0').css('z-index', '500').removeClass('original').hide();
+
+                        scrollIntervalID = setInterval(stickIt, 10);
+
+
+                        function stickIt() {
+
+                            var orgElementPos = $('.original').offset();
+                            orgElementTop = orgElementPos.top;
+
+                            if ($(window).scrollTop() >= (orgElementTop)) {
+                                // scrolled past the original position; now only show the cloned, sticky element.
+
+                                // Cloned element should always have same left position and width as original element.
+                                orgElement = $('.original');
+                                coordsOrgElement = orgElement.offset();
+                                leftOrgElement = coordsOrgElement.left;
+                                widthOrgElement = orgElement.css('width');
+                                $('.cloned').css('left', leftOrgElement + 'px').css('top', 0).css('width', widthOrgElement).show();
+                                $('.original').css('visibility', 'hidden');
+                            } else {
+                                // not scrolled past the menu; only show the original menu.
+                                $('.cloned').hide();
+                                $('.original').css('visibility', 'visible');
+                            }
+                        }
+
+                    </script>
+
+                    <script>
+
+                        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                            anchor.addEventListener('click', function (e) {
+                                e.preventDefault();
+
+                                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                                    behavior: 'smooth'
+                                });
+                            });
+                        });
+
+                        // When the user scrolls down 20px from the top of the document, show the button
+                        window.onscroll = function () { scrollFunction() };
+
+                        function scrollFunction() {
+                            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                                document.getElementById("scroll-up-btn").style.display = "block";
+                            } else {
+                                document.getElementById("scroll-up-btn").style.display = "none";
+                            }
+                        }
+
+                        // When the user clicks on the button, scroll to the top of the document
+                        function topFunction() {
+                            document.body.scrollTop = 0; // For Safari
+                            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+                        }
+
+                            
+
+                        
+
+
+                    </script>
+
+
+
+</body>
+
+</html>
