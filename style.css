@@ -226,44 +226,6 @@ body {
 
 }
 
-.background-1 {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url('sarah-perverse-affordances.png');
-    background-attachment: fixed;
-    background-position: top;
-}
-
-.background-2 {
-    background-image: url('Skawennati_Becoming-Sky- Woman_2016.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: top;
-}
-
-.background-3 {
-    background-image: url('matias_can-you-hear-me_antennas_2014.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: top;
-}
-
-.background-4 {
-    background-image: url('Skawennati_Kahenteshon-meets-You-Know-Who_2017.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height:100%;
-    width:100%; 
-    background-position: top;
-}
-
 .background-footer {
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -688,3 +650,4 @@ a h5 {
     font-style: normal;
   
   }
+
