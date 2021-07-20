@@ -1,3 +1,8 @@
+:root {
+  --main-color: rgb(67, 145, 52);
+  --accent-color: rgb(52, 139, 194);
+}
+
 .header a.logo {
     float: left;
     height: 58px;
@@ -61,7 +66,7 @@
     z-index: 99;
     border: none;
     outline: none;
-    background-color: #6DAE0CC9;
+    background-color: rgba(67, 145, 52, .788);
     color: white;
     cursor: pointer;
     padding: 12px 18px;
@@ -78,7 +83,7 @@
   }
 
   #scroll-up-btn:hover {
-    background-color: #5d7638; /* Add a dark-grey background on hover */
+    background-color: var(--main-color); /* Add a dark-grey background on hover */
   }
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
@@ -111,22 +116,6 @@
 }
 
 
-
-.header a.btn-outlined {
-    background-color: transparent;
-    background-image: url('button_background_purple.png');
-    color: white;
-    padding: 10px 25px;
-    border: 1px green;
-}
-
-.header a.btn-outlined:hover {
-    background-color: rgba(119,0,129, 0.8);
-    background-image: url('button_background_purple.png');
-    color: yellow;
-    padding: 10px 25px;
-}
-
 a.btn {
     display: inline-block;
     padding: 10px 25px;
@@ -145,10 +134,10 @@ a.btn-outlined {
 }
 
 a.btn-filled {
-    background-color: #6600FF;
+    background-color: var(--accent-color);
     color: white;
     border: 1px solid;
-    border-color: #6600FF;
+    border-color: var(--accent-color);
 }
 
 a.btn:hover {
@@ -161,16 +150,16 @@ a.btn:hover {
 
 a.btn-outlined:hover {
     background-color: transparent;
-    color: #6DAE0C;
+    color: var(--main-color);
     border: 1px solid;
-    border-color: #6DAE0C;
+    border-color: var(--main-color);
 }
 
 a.btn-filled:hover {
-    background-color: #6DAE0C;
+    background-color: var(--main-color);
     color: white;
     border: 1px solid;
-    border-color: #6DAE0C;
+    border-color: var(--main-color);
 }
 
 .header a {
@@ -181,11 +170,11 @@ a.btn-filled:hover {
 }
 
 .header a:hover {
-    color: #6DAE0C;
+    color: var(--main-color);
 }
 
 .header a:active {
-    color: #6DAE0C;
+    color: var(--main-color);
 }
 
 
@@ -283,7 +272,7 @@ p {
 }
 
 p a {
-    color: green;
+    color: var(--main-color);
     text-decoration: none;
     cursor: pointer;
     -webkit-transition: .1s ease-in-out;
@@ -294,7 +283,7 @@ p a {
 }
 
 p a:hover {
-    color: #6600FF;
+    color: var(--accent-color);
 }
 
 footnote {
@@ -320,7 +309,7 @@ p.center {
 
 
 h1 {
-    color: #5A9700;
+    color: var(--main-color);
     font-size: 3rem;
     font-family: 'rennerbold', sans-serif;
     font-weight: 500;
@@ -369,7 +358,6 @@ h5 {
 }
 
 a h5 {
-    color: #1B00B1;
     font-size: 1.2rem;
     font-family: 'rennerbook', sans-serif;
     font-weight: 500;
@@ -406,10 +394,10 @@ a h5 {
     text-decoration: none;
     font-weight: 400;
     border-radius: 8px;
-    background-color: #6600FF;
+    background-color: var(--accent-color);
     color: white;
     border: 1px solid;
-    border-color: #6600FF;
+    border-color: var(--accent-color);
     cursor: pointer;
     -webkit-transition: .1s ease-in-out;
     -moz-transition: .1s ease-in-out;
@@ -420,8 +408,8 @@ a h5 {
 
   /* When moving the mouse over the submit button, add a darker green color */
   input[type=submit]:hover {
-    background-color: #6DAE0C;
-    border-color: #6DAE0C;
+    background-color: var(--main-color);
+    border-color: var(--main-color);
   }
 
   /* Add a background color and some padding around the form */
