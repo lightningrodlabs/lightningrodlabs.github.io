@@ -1,2 +1,2 @@
-# h-be.github.io
-Harris-Braun Enterprises pages
+# lightningrodlabs.github.io
+Lighningrod Labs website
