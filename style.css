@@ -318,13 +318,13 @@ h1 {
     letter-spacing: 0.05rem;
 }
 
-@supports (-webkit-background-clip: text) or (background-clip: text) {
+/*@supports (-webkit-background-clip: text) or (background-clip: text) {
   h1 {
     background: linear-gradient(var(--accent-color), var(--main-color));
     background-clip: text;
     color: transparent;
   }
-}
+}*/
 
 h2 {
     color: black;
@@ -427,6 +427,28 @@ a h5 {
   }
 
 
+  .project-logo {
+    width: 48px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+
+  .folk {
+    display: inline-block;
+    margin: 5px;
+  }
+  .folk img {
+    border-radius: 50%;
+    height: 100px;
+  }
+  .folk a {
+    display: block;
+    text-align: center;
+  }
+  .folks h3 {
+    text-align: center;
+  }
 
 @media screen and (min-width: 921px) {
     .row {

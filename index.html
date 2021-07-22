@@ -30,9 +30,9 @@
         </a>
 
         <ul class="menu-expanded">
-          <li><a href="#about">about</a></li>
           <li><a href="#projects">projects</a></li>
-          <li><a href="#connect">connect</a></li>
+          <li><a href="#about">about</a></li>
+          <!-- <li><a href="#connect">connect</a></li> -->
         </ul>
 
         <li class="social-link"><a style="text-align:right;" href="https://github.com/lightningrodlabs">
@@ -45,29 +45,19 @@
     <div class="background-2" id="mission">
 
       <div class="main content-block">
-        <h1 style="text-align:center; margin-top:5rem;">Nurturing Holochain Ecosystem</h1>
+        <h1 style="text-align:center; margin-top:5rem;">Nurturing The Holochain Ecosystem</h1>
         <h2 style="text-align:center;
                     color: black;
                     font-size: 1.2rem;
                     font-family: 'rennerbook', sans-serif;
                     font-weight: 400;
                     font-style: normal;
-                    line-height: 2rem;">expanding collective & community-driven expressive capacities through technology</h2>
+                    line-height: 2rem;">expanding collective & community-driven grammatic capacities</h2>
         <div style="text-align:center;">
           <br />
           <a href="#about" class="btn btn-outlined">about us</a>
           <a href="#projects" class="btn btn-filled">our projects</a><br /><br /><br />
         </div>
-      </div>
-
-    </div>
-
-
-    <div class="background-3" id="about">
-
-      <div class="main content-block">
-        <h2 style="text-align:center; line-height:3rem;">who we are</h2>
-        <p>Lightningrod Labs incubates Holochain-based distributed apps to enrich the soil where those and other Holochain apps are growing.</p>
       </div>
 
     </div>
@@ -79,13 +69,13 @@
         <h2 style="text-align:center;">our projects</h2>
 
         <div class="content-block" id="acorn">
-          <h3>Acorn</h3>
+          <img src="projects/acorn_logo.png" class="project-logo"><h3>Acorn</h3>
           <h4>An open-source Holochain-based project management & collaboration app for distributed teams with complex projects</h4>
           <p>Try a prototype release from the <a href="https://github.com/h-be/acorn/releases">Acorn releases page</a> and learn more about the project from the <a href="https://github.com/h-be/acorn-docs/blob/master/README.md">Acorn documentation and FAQ</a>.</p>
         </div>
 
         <div class="content-block" id="SnapMail">
-          <h3>SnapMail</h3>
+          <img src="projects/snapmail_logo.png" class="project-logo"><h3>SnapMail</h3>
           <h4>Peer-to-peer email on Holochain</h4>
           <p>SnapMail was developed by Eric Harris-Braun and Asher King in 1990 and it has been providing cross-platform, peer-to-peer messaging for the three decades since. Lighningrod Labs is now updating SnapMail using Holochain infrastructure for the next three.</p>
           <p>Try a prototype release from the <a href="https://github.com/glassbeadsoftware/snapmail-release">SnapMail releases page</a> and learn more about the project from the <a href="https://github.com/glassbeadsoftware/">SnapMail GitHub repos</a>.</p>
@@ -102,40 +92,59 @@
 
     </div>
 
+    <!--
+         <div class="background-5" id="connect">
+         <div class="main content-block">
+         <h2 style="text-align:center;">let's connect</h2>
+         <p style="text-align:center;">simply send us a message at <a href="mailto:info@harris-braun.com">info@harris-braun.com</a> or fill out the form below:</p>
+         <br/>
+         <form action="https://formspree.io/info@harris-braun.com" method="POST" >
 
-    <div class="background-5" id="connect">
+         <div class="row">
+         <div class="column column-left">
+         <label for="fname">First Name</label>
+         <input type="text" id="fname" name="first name" placeholder="Your first name" />
+         </div>
+         <div class="column column-right">
+         <label class="column" for="lname">Last Name</label>
+         <input type="text" id="lname" name="last name" placeholder="Your last name">
+         </div>
+         </div>
+         <div class="row">
+         <div class="column column-left">
+         <label for="email">Email</label>
+         <input type="text" id="email" name="email" placeholder="yourname@domain.com">
+         </div>
+         </div>
+         <div class="row">
+         <div class="column column-left">
+         <label for="message" class="btn btn-filled">Your Message</label>
+         <textarea id="message" name="message" placeholder="Write your message or inquiry here" style="height:150px"></textarea>
+         </div>
+         </div>
+
+         <input type="submit" value="send">
+
+         </form>
+         </div>
+
+         </div> -->
+    <div class="background-3" id="about">
+
       <div class="main content-block">
-        <h2 style="text-align:center;">let's connect</h2>
-        <p style="text-align:center;">simply send us a message at <a href="mailto:info@harris-braun.com">info@harris-braun.com</a> or fill out the form below:</p>
-        <br/>
-        <form action="https://formspree.io/info@harris-braun.com" method="POST" >
-
-          <div class="row">
-            <div class="column column-left">
-              <label for="fname">First Name</label>
-              <input type="text" id="fname" name="first name" placeholder="Your first name" />
-            </div>
-            <div class="column column-right">
-              <label class="column" for="lname">Last Name</label>
-              <input type="text" id="lname" name="last name" placeholder="Your last name">
-            </div>
+        <h2 style="text-align:center; line-height:3rem;">about us</h2>
+        <p>Started by Holochain co-founder <a href="http://eric.harris-braun.com">Eric Harris-Braun</a> Lightningrod Labs brings together a band of code-monekeys, designers, and others to build the soil and play in the garden of this emerging ecosystem. </p>
+        <div class="folks">
+          <h3> we are </h3>
+          <div class="folk">
+            <img src="folks/eric.jpg">
+            <a href="http://eric.harris-braun.com">eric</a>
           </div>
-          <div class="row">
-            <div class="column column-left">
-              <label for="email">Email</label>
-              <input type="text" id="email" name="email" placeholder="yourname@domain.com">
-            </div>
+          <div class="folk">
+            <img src="folks/will.jpg">
+            <a href="https://will.quest/">will</a>
           </div>
-          <div class="row">
-            <div class="column column-left">
-              <label for="message" class="btn btn-filled">Your Message</label>
-              <textarea id="message" name="message" placeholder="Write your message or inquiry here" style="height:150px"></textarea>
-            </div>
-          </div>
-
-          <input type="submit" value="send">
-
-        </form>
+        </div>
       </div>
 
     </div>
