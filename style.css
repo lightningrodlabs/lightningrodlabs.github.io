@@ -439,7 +439,7 @@ a h5 {
     margin: 5px;
   }
   .folk img {
-    border-radius: 50%;
+    border-radius: 4px 40px ;
     height: 100px;
   }
   .folk a {
