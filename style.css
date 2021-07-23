@@ -314,17 +314,18 @@ h1 {
     font-family: 'rennerbold', sans-serif;
     font-weight: 500;
     font-style: normal;
-    line-height: 3.5rem;
+    line-height: 3.5rem !important;
     letter-spacing: 0.05rem;
 }
 
-/*@supports (-webkit-background-clip: text) or (background-clip: text) {
+@supports (-webkit-background-clip: text) or (background-clip: text) {
   h1 {
     background: linear-gradient(var(--accent-color), var(--main-color));
+    -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
   }
-}*/
+}
 
 h2 {
     color: black;
