@@ -126,6 +126,10 @@ a.btn {
 
 }
 
+#mission a.btn {
+  margin: 10px;
+}
+
 a.btn-outlined {
     background-color: transparent;
     color: black;
