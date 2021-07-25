@@ -111,8 +111,6 @@
     padding-top: 15px;
     padding-bottom: 15px;
     align-content: center;
-
-
 }
 
 .title {
@@ -138,7 +136,6 @@ a.btn {
     text-decoration: none;
     font-weight: 400;
     border-radius: 8px;
-
 }
 
 #mission a.btn {
@@ -196,10 +193,6 @@ a.btn-filled:hover {
     color: var(--main-color);
 }
 
-
-
-
-
 .footer ul {
     margin-bottom: 0;
 }
@@ -212,7 +205,6 @@ a.btn-filled:hover {
 
 .footer a:hover {
     color: #3000B1;
-
 }
 
 a.code-of-conduct {
@@ -234,7 +226,6 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
     -o-font-smoothing: antialiased;
-
 }
 
 .background-footer {
@@ -244,7 +235,6 @@ body {
     border-top: 1px solid;
     border-color: #dbdbdb;
 }
-
 
 .content-block {
     margin: 0 auto;
@@ -266,8 +256,6 @@ body {
     width: 100%;
     font-weight: 300;
     padding-left: 0;
-
-
 }
 
 .header li {
@@ -321,10 +309,7 @@ p.center {
 
 .italic {
     font-style: italic;
-
 }
-
-
 
 h1 {
     color: var(--main-color);
@@ -445,7 +430,6 @@ a h5 {
     padding: 80px;
   }
 
-
   .project-logo {
     width: 48px;
     float: left;
@@ -503,12 +487,6 @@ a h5 {
         line-height: 1.4rem;
     }
 
-
-
-
-
-
-
     .topnav.responsive {position: relative;}
     .topnav.responsive a.icon {
     position: absolute;
@@ -521,8 +499,6 @@ a h5 {
     display: block;
     text-align: left;
   }
-
-
 }
 
 @media screen and (min-width: 501px) and (max-width: 821px) {
@@ -555,20 +531,19 @@ a h5 {
 
 @media screen and (min-width: 660px) {
 
-      .menu-btn, label.menu-icon, .menu-drop-down{
+    .menu-btn, label.menu-icon, .menu-drop-down{
         display: none;
-      }
+    }
 
-      .header .menu-dropdown {
+    .header .menu-dropdown {
         display: none;
-
-      }
+    }
 }
 
 @media screen and (max-width: 500px) {
 
     .header ul {
-      display: none;
+        display: none;
     }
 
     .social-link {
@@ -584,10 +559,7 @@ a h5 {
         border-bottom: 1px solid #cececec7;
         border-right: none;
     }
-
-
-
-    }
+}
 
 
   /* Fonts */
@@ -599,7 +571,6 @@ a h5 {
          url('fonts/renner/renner-book-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
   }
 
   @font-face {
@@ -608,7 +579,6 @@ a h5 {
          url('fonts/renner/renner-black-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
   }
 
 
@@ -618,7 +588,6 @@ a h5 {
          url('fonts/renner/renner-blackitalic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
   }
 
 
@@ -628,7 +597,6 @@ a h5 {
          url('fonts/renner/renner-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
   }
 
 
@@ -638,7 +606,6 @@ a h5 {
          url('fonts/renner/renner-bolditalic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
   }
 
 
@@ -648,7 +615,6 @@ a h5 {
          url('fonts/renner/renner-bookitalic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
   }
 
 
@@ -657,8 +623,7 @@ a h5 {
     src: url('fonts/renner/renner-light-webfont.woff2') format('woff2'),
          url('fonts/renner/renner-light-webfont.woff') format('woff');
     font-weight: normal;
-    font-style: normal;
-
+    font-style: normal
   }
 
 
@@ -668,7 +633,6 @@ a h5 {
          url('fonts/renner/renner-lightitalic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
   }
 
 
@@ -678,7 +642,6 @@ a h5 {
          url('fonts/renner/renner-medium-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
   }
 
 
@@ -688,5 +651,4 @@ a h5 {
          url('fonts/renner/renner-mediumitalic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
   }
