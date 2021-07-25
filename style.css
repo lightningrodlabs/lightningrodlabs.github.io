@@ -132,7 +132,6 @@
 a.btn {
     display: inline-block;
     padding: 10px 25px;
-    margin-left: 20px;
     text-decoration: none;
     font-weight: 400;
     border-radius: 8px;
@@ -140,6 +139,17 @@ a.btn {
 
 #mission a.btn {
   margin: 10px;
+}
+
+.btn-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#projects a.btn {
+  padding: 7px 15px;
 }
 
 a.btn-outlined {
