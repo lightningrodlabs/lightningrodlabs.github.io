@@ -12,7 +12,7 @@
     align-items: center;
 }
 
-.header h3.title {
+.header h3.wordmark {
     display: inline-block;
     margin: 0;
     height: 1em;
@@ -113,6 +113,21 @@
     align-content: center;
 
 
+}
+
+.title {
+  text-align:center;
+  margin-top:5rem;
+}
+
+.subtitle {
+  text-align:center;
+  color: black;
+  font-size: 1.2rem;
+  font-family: 'rennerbook', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2rem;
 }
 
 
