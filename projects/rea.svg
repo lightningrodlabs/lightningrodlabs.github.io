@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<svg viewBox="311.276 95.609 112.479 115.789" width="112.479" height="115.789">
+<svg viewBox="311.276 95.609 112.479 115.789" width="112.479" height="115.789" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
   <rect x="311.276" y="95.609" width="112.479" height="115.789" style="fill: rgb(88, 4, 168);" rx="21.647" ry="21.647"></rect>
   <path style="fill: rgb(216, 216, 216); stroke-width: 4px; stroke: rgb(255, 255, 255); fill-opacity: 0; stroke-linecap: round;" d="M 367.452 183.044 C 387.166 183.044 399.487 161.156 389.631 143.645 C 383.747 133.191 371.672 128.196 360.365 131.538" transform="matrix(0.933939, 0.357431, -0.357431, 0.933939, 80.92392, -124.299171)"></path>
   <path style="stroke: rgb(255, 255, 255); fill-opacity: 0; stroke-width: 4px; stroke-linecap: round;" d="M 367.851 166.607 C 376.844 166.607 382.464 156.872 377.968 149.085 C 373.472 141.297 362.232 141.297 357.735 149.085 C 357.269 149.891 356.902 150.751 356.64 151.645"></path>
