@@ -445,13 +445,41 @@ a h5 {
     border-radius: 4px 40px ;
     height: 100px;
   }
+  .small img {
+    border-radius: 50% ;
+    height: 40px;
+  }
+
   .folk a {
     display: block;
     text-align: center;
   }
+  .small a {
+    display: inline;
+  }
+
   .folks h3 {
     text-align: center;
   }
+
+  .blog-title {
+    font-size: 150%;
+    font-weight: bold;
+  }
+
+  .blog-header {
+    justify-content: space-between;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+
 
 @media screen and (min-width: 921px) {
     .row {
