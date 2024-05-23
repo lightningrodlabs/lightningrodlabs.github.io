@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lightningrod Labs: Moss</title>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/kqq2ctu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+  </head>
+
+  <body>
+
+    <button onclick="topFunction()" id="scroll-up-btn" title="Go to top"><i class="fa fa-angle-up"></i></button>
+
+
+    <div class="background-1" id="program">
+
+      <div class="header content-block" id="header">
+        <a class="logo" onclick="topFunction()">
+          <img src="../lrl_logo.png" height="100%">
+          <h3 class="wordmark">Lightningrod Labs</h3>
+        </a>
+
+        <ul class="menu-expanded">
+          <li><a href="/#projects">projects</a></li>
+          <li><a href="/#about">about</a></li>
+          <li><a href="/blog">blog</a></li>
+        </ul>
+
+        <li class="social-link"><a style="text-align:right;" href="https://github.com/lightningrodlabs">
+              <img src="../github-accent.svg" width="22" height="22" /></a></li>
+      </div>
+
+    </div>
+
+    <div class="background-4" id="blog">
+
+      <div class="main content-block">
+        <div style="display:flex; align-items: center;width:100%;justify-content: center;"><h2 >Joining a Weave Group</h2><img style="margin-left:20px" height="60" src="../join.png"></div>
+
+        <div class="content-block" id="2022-11-11-welcome">
+            <div class="blog-entry">
+                <p>  You have clicked on a link to join a Weave group in Moss.  Currently "deep-links" aren't working for Moss, so you need to
+                    click on Join Group in the Moss app itself, and then paste in the URL that brought you to this page.
+                </p>
+                <p>
+                    If you haven't installed Moss yet, you can  <a href="https://theweave.social/moss/#download">download it here!</a>
+                </p>
+            </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <br />
+
+    <div class="background-footer">
+
+      <div class="content-block footer">
+        <p class="center">
+           <footnote>© 2021-2024 Harris-Braun Enterprises, LLC</footnote>
+        </p>
+      </div>
+    </div>
+
+    <script>
+        // Create a clone of the menu, right next to original.
+        $('.header').addClass('original').clone().insertAfter('.header').addClass('cloned').css('position', 'fixed').css('top', '0').css('margin-top', '0').css('z-index', '500').removeClass('original').hide();
+
+        scrollIntervalID = setInterval(stickIt, 10);
+
+
+        function stickIt() {
+
+            var orgElementPos = $('.original').offset();
+            orgElementTop = orgElementPos.top;
+
+            if ($(window).scrollTop() >= (orgElementTop)) {
+                // scrolled past the original position; now only show the cloned, sticky element.
+
+                // Cloned element should always have same left position and width as original element.
+                orgElement = $('.original');
+                coordsOrgElement = orgElement.offset();
+                leftOrgElement = coordsOrgElement.left;
+                widthOrgElement = orgElement.css('width');
+                $('.cloned').css('left', leftOrgElement + 'px').css('top', 0).css('width', widthOrgElement).show();
+                $('.original').css('visibility', 'hidden');
+            } else {
+                // not scrolled past the menu; only show the original menu.
+                $('.cloned').hide();
+                $('.original').css('visibility', 'visible');
+            }
+        }
+
+    </script>
+
+    <script>
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("scroll-up-btn").style.display = "block";
+            } else {
+                document.getElementById("scroll-up-btn").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+
+    </script>
+
+  </body>
+
+</html>
