@@ -648,6 +648,158 @@ a h5 {
     color: var(--accent-color);
   }
 
+  /* Tool icons in posts: a grid of linked icons, inline chips, and floated icons */
+
+  .tool-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(88px, 1fr));
+    gap: 1.1rem .5rem;
+    margin: 1.5rem 0 1.75rem;
+  }
+
+  .tool-grid a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .4rem;
+    color: #333;
+    font-size: .88rem;
+    line-height: 1.1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: color .1s ease-in-out;
+  }
+
+  .tool-grid a:hover {
+    color: var(--main-color);
+  }
+
+  .tool-grid img {
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    object-fit: contain;
+  }
+
+  .blog-entry a.tool {
+    white-space: nowrap;
+  }
+
+  .blog-entry a.tool img {
+    width: 1.25em;
+    height: 1.25em;
+    margin-right: .25em;
+    vertical-align: -.25em;
+    border-radius: 4px;
+    object-fit: contain;
+  }
+
+  .blog-entry h5.tool-head {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    margin: 1.8rem 0 .25rem;
+    line-height: 1.6rem;
+  }
+
+  .blog-entry h5.tool-head img {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    object-fit: contain;
+  }
+
+  .blog-entry ul,
+  .blog-entry ol {
+    color: #505050;
+    font-family: 'rennerbook', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+    padding-left: 1.5rem;
+  }
+
+  .blog-entry li {
+    margin: .2rem 0;
+  }
+
+  .blog-entry li a {
+    color: var(--main-color);
+    text-decoration: none;
+    transition: color .1s ease-in-out;
+  }
+
+  .blog-entry li a:hover {
+    color: var(--accent-color);
+  }
+
+  .post-callout {
+    margin: 1.5rem 0;
+    padding: .1rem 1.25rem;
+    border-left: 4px solid var(--main-color);
+    border-radius: 0 8px 8px 0;
+    background: #f4f8f3;
+  }
+
+  /* the Syn layer picture: three stacked bands */
+  .layer-stack {
+    max-width: 34rem;
+    margin: 1.5rem auto;
+    font-family: 'rennerbook', sans-serif;
+    font-size: 1rem;
+    line-height: 1.35rem;
+    color: #333;
+  }
+
+  .layer-stack > div {
+    padding: .6rem 1rem;
+    border: 1px solid #d6d6d6;
+    border-radius: 8px;
+    background: #fff;
+  }
+
+  .layer-stack > div + div {
+    margin-top: .4rem;
+  }
+
+  .layer-stack > div.syn {
+    border-color: var(--main-color);
+    background: #f4f8f3;
+  }
+
+  .layer-stack b {
+    font-weight: 600;
+  }
+
+  .layer-stack span {
+    color: #777;
+  }
+
+  .stat-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
+    gap: .6rem;
+    margin: 1.25rem 0;
+  }
+
+  .stat-row > div {
+    padding: .7rem .5rem;
+    border: 1px solid #e3e3e3;
+    border-radius: 8px;
+    text-align: center;
+    font-family: 'rennerbook', sans-serif;
+    color: #777;
+    font-size: .9rem;
+    line-height: 1.2rem;
+  }
+
+  .stat-row b {
+    display: block;
+    color: #333;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 500;
+  }
+
   .blog-entry code {
     font-size: .92em;
     background: #f3f3f3;
