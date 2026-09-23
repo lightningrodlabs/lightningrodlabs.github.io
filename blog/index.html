@@ -64,19 +64,19 @@
         <article class="post-card">
             <div class="post-card-meta">
                 <img src="../folks/eric.jpg" alt="" width="32" height="32">
-                <span>Eric Harris-Braun · September 22, 2026</span>
+                <span>Eric Harris-Braun · September 23, 2026</span>
             </div>
             <h3 class="post-card-title"><a class="post-card-link" href="/blog/webrtc-peer/">WebRTC without a signaling server</a></h3>
             <div class="post-teaser">
                 <p>
-                    Two libraries have come out of the work on Presence, our video-call tool for Moss, and I want to
-                    write about both. This post is about the first, @lightningrodlabs/webrtc-peer: give it two
-                    callbacks, one that sends a message to a peer and one you call when a message arrives, and it
-                    hands you back a managed WebRTC connection per peer.
+                    WebRTC is supposed to be peer-to-peer. In practice, it is not. Almost every WebRTC call today
+                    depends on servers that someone has to run, and the libraries that support WebRTC carry that
+                    centralized assumption into their design.
                 </p>
                 <p>
-                    It establishes the connection, keeps it alive, and tells you one coherent thing about what it's
-                    doing. The next post is about what we do when WebRTC can't connect at all.
+                    This post is about pulling WebRTC back toward peer-to-peer, starting with the signaling server.
+                    @lightningrodlabs/webrtc-peer gives a peer-to-peer app a managed WebRTC connection per peer, over
+                    whatever channel it already has. It ends with the plan for large calls with no server at all.
                 </p>
             </div>
             <span class="read-more">Read more →</span>
