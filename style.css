@@ -965,20 +965,63 @@ a h5 {
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
+
+    /* Logo on the left and the GitHub link on the right share the top row; the nav links drop to a row of
+       their own below. Plain floats and absolute positioning, not flex: the sticky copy of the header is
+       made at load time with display set inline, so a layout that needs display:flex breaks on resize. */
+    .header {
+        position: relative;
+    }
+
+    .header h3.wordmark {
+        font-size: 1.1rem;
+    }
+
+    .header .social-link {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        float: none;
+        height: 68px;
+        display: flex;
+        align-items: center;
+        padding-right: 0;
+    }
+
+    .header.cloned .social-link {
+        top: 15px;
+    }
+
+    /* The sticky copy gets its width and left offset inline, from the original at load time, so after a resize
+       it no longer fits the screen. On a narrow screen it simply spans the viewport. */
+    .header.cloned {
+        width: 100% !important;
+        left: 0 !important;
+        box-sizing: border-box;
+    }
+
+    .social-link a {
+        padding: 0 0 0 8px;
+    }
 
     .header ul {
-        display: none;
+        clear: both;
+        width: 100%;
+        margin-top: 0;
+        padding-bottom: 6px;
+        text-align: center;
     }
 
-    .social-link {
-        text-align: right;
-        position: relative;
-        padding-right: 20px;
-        top: 20px;
-        float: right;
+    .header ul a,
+    .header ul a:hover {
+        float: none;
+        padding: 6px 14px;
+        font-size: 15px;
     }
+}
 
+@media screen and (max-width: 500px) {
 
     .bottom-border {
         border-bottom: 1px solid #cececec7;
