@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>User Error · Lightningrod Labs</title>
+    <meta name="description" content="When someone apologizes for a &quot;user error,&quot; there's usually a design error hiding behind it. Why co-design is at the heart of our Early Movers program.">
+    <meta name="author" content="Eric Harris-Braun">
+    <link rel="canonical" href="https://moss.social/blog/2026/10/14/user-error/">
+
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Lightningrod Labs">
+    <meta property="og:title" content="User Error">
+    <meta property="og:description" content="When someone apologizes for a &quot;user error,&quot; there's usually a design error hiding behind it. Why co-design is at the heart of our Early Movers program.">
+    <meta property="og:url" content="https://moss.social/blog/2026/10/14/user-error/">
+    <meta property="og:image" content="https://moss.social/blog/assets/images/posts/user-error/tool-library.png">
+    <meta property="article:published_time" content="2026-10-14">
+    <meta property="article:author" content="Eric Harris-Braun">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="User Error">
+    <meta name="twitter:description" content="When someone apologizes for a &quot;user error,&quot; there's usually a design error hiding behind it. Why co-design is at the heart of our Early Movers program.">
+    <meta name="twitter:image" content="https://moss.social/blog/assets/images/posts/user-error/tool-library.png">
+
+    <link rel="stylesheet" type="text/css" href="../../style.css?v=20261008b" />
+    <link rel="stylesheet" href="https://use.typekit.net/kqq2ctu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+  </head>
+
+  <body>
+
+    <button onclick="topFunction()" id="scroll-up-btn" title="Go to top"><i class="fa fa-angle-up"></i></button>
+
+
+    <div class="background-1" id="program">
+
+      <div class="header content-block" id="header">
+        <a class="logo" href="/">
+          <img src="../../lrl_logo.png" height="100%">
+          <h3 class="wordmark">Lightningrod Labs</h3>
+        </a>
+
+        <ul class="menu-expanded">
+          <li><a href="/#projects">projects</a></li>
+          <li><a href="/#about">about</a></li>
+          <li><a href="/blog">blog</a></li>
+        </ul>
+
+        <li class="social-link"><a style="text-align:right;" href="https://github.com/lightningrodlabs">
+              <img src="../../github-accent.svg" width="22" height="22" /></a></li>
+      </div>
+
+    </div>
+
+    <div class="background-4" id="blog">
+
+      <div class="main content-block">
+        <p class="post-back"><a href="/blog/">← All posts</a></p>
+
+        <article class="blog-post">
+            <h2 class="post-title">User Error</h2>
+            <div class="post-byline">
+                <img src="../../folks/eric.jpg" alt="" width="40" height="40">
+                <span><a href="http://eric.harris-braun.com">Eric Harris-Braun</a> · October 14, 2026</span>
+            </div>
+            <div class="blog-entry">
+                <p>
+                    I recently worked with one of our Early Movers, who had reported a bug. After I asked a few
+                    questions about how to reproduce the problem, I got back an answer that was something like:
+                </p>
+                <blockquote>
+                    <p>
+                        User error. I was using my mouse and I was right-clicking the button looking for the options
+                        from the drop-down menu, instead of clicking the button to execute it. When I did that, it
+                        worked like you said. My apologies.
+                    </p>
+                </blockquote>
+                <p>
+                    That response left me feeling like something wasn't right. I don't actually think this was a
+                    "user error," and if I had accepted that, I would have missed a real opportunity. So instead I
+                    wrote back:
+                </p>
+                <blockquote>
+                    <p>
+                        I think it's important not to think of this as a user error. What I'm hearing is that you had
+                        an expectation that you could right-click on something, and I think it's important to fulfill
+                        that expectation. That's what makes for a better user experience.
+                    </p>
+                </blockquote>
+                <p>
+                    Then I wrote a very simple right-click handler that should have been there to start with.
+                </p>
+                <p>
+                    This is a small example of what I want to happen with our
+                    <a href="https://app.formbricks.com/s/cmg8ct5x906hzxe01h503txyf">Early Movers</a> program, which
+                    is co-design. We think we've got something really cool that we're bringing into the world, but
+                    that "cool" has to meet the actual needs and expectations of folks who also see the cool but
+                    don't start from exactly where we start.
+                </p>
+
+                <h4>When the software works differently</h4>
+                <p>
+                    The problem compounds when you design software whose basic operating assumptions differ from what
+                    people expect, as peer-to-peer groupware like Moss does. Here's a big example that's been really
+                    hard to get right, and I still don't think we have it right: the simple question of "installing a
+                    tool."
+                </p>
+                <p>
+                    Most people know what it's like to install an app. You go to a website, or to the App Store or
+                    Play Store, click install, and bingo, you get a new icon you can click on and you're ready to go.
+                    In Moss we have two constraints that pull against each other, which makes the experience hard to
+                    get smooth:
+                </p>
+                <ul>
+                    <li>
+                        The tools you use live in a group context. Once one person decides to add a tool to the
+                        group, it exists for everybody.
+                    </li>
+                    <li>
+                        We don't want other people to be able to install software on our computers that we haven't
+                        agreed to.
+                    </li>
+                </ul>
+                <p>
+                    So in Moss there's a tool library, where people can choose tools to add to the group. And then
+                    each person also has to "activate" the tool for themselves, which means giving consent to actually
+                    download and run it.
+                </p>
+                <figure class="post-figure">
+                    <img src="screenshots/tool-library.png" alt="The Moss tool library, showing tool cards with an Install to a group space button and a menu listing the user's groups">
+                    <figcaption>The tool library, with its "Install to a group space" button.</figcaption>
+                </figure>
+                <figure class="post-figure float-right">
+                    <img src="screenshots/activate-tool.png" alt="The Notebooks tool in a group's sidebar, with a power button and an Activate this tool tooltip">
+                    <figcaption>A tool waiting to be activated.</figcaption>
+                </figure>
+                <p>
+                    But when I watch what actually happens, this has been a huge source of trouble. People routinely
+                    install a new instance of a tool into the group when they should have just activated the existing
+                    one that was right there, waiting to be turned on.
+                </p>
+
+                <h4>Design error</h4>
+                <p>
+                    When I've explained this to people, I get the same "oh, I'm sorry, user error." But really the
+                    problem is in my hands. It's a design error. In this case I think the problem is twofold. I've
+                    been using the word "install" for what happens when the person setting up the group registers a
+                    tool for the group and activates it for themselves at the same time. That creates confusion. And
+                    believe me, we've been through a bunch of rounds of changing the terminology (it used to be "join a
+                    tool," not "activate a tool") and more.
+                </p>
+                <p>
+                    I think I have a new solution for this. It's not only to change the naming again, but also to
+                    remove the tool library icon from the main left-hand bar and leave that action only in the places
+                    where folks do group configuration.
+                </p>
+                <p>
+                    But that's not the main point. The point is a version of "the customer is always right." Not
+                    fully that, because I'm also bringing something new. The "customer" has to be supported in
+                    understanding that newness, and I have to be supported in understanding how to deliver smooth
+                    pathways to sharing it.
+                </p>
+                <p>
+                    That's what I hope to achieve with a mindset of co-design. If your group is interested, please
+                    <a href="https://app.formbricks.com/s/cmg8ct5x906hzxe01h503txyf">join the Early Movers program</a>!
+                </p>
+            </div>
+        </article>
+
+        <p class="post-back"><a href="/blog/">← All posts</a></p>
+      </div>
+
+    </div>
+
+    <br />
+
+    <div class="background-footer">
+
+      <div class="content-block footer">
+        <p class="center">
+           <footnote>© 2021-2026 Harris-Braun Enterprises, LLC</footnote>
+        </p>
+      </div>
+    </div>
+
+    <script>
+        // Create a clone of the menu, right next to original.
+        $('.header').addClass('original').clone().insertAfter('.header').addClass('cloned').css('position', 'fixed').css('top', '0').css('margin-top', '0').css('z-index', '500').removeClass('original').hide();
+
+        scrollIntervalID = setInterval(stickIt, 10);
+
+
+        function stickIt() {
+
+            var orgElementPos = $('.original').offset();
+            orgElementTop = orgElementPos.top;
+
+            if ($(window).scrollTop() >= (orgElementTop)) {
+                // scrolled past the original position; now only show the cloned, sticky element.
+
+                // Cloned element should always have same left position and width as original element.
+                orgElement = $('.original');
+                coordsOrgElement = orgElement.offset();
+                leftOrgElement = coordsOrgElement.left;
+                widthOrgElement = orgElement.css('width');
+                $('.cloned').css('left', leftOrgElement + 'px').css('top', 0).css('width', widthOrgElement).show();
+                $('.original').css('visibility', 'hidden');
+            } else {
+                // not scrolled past the menu; only show the original menu.
+                $('.cloned').hide();
+                $('.original').css('visibility', 'visible');
+            }
+        }
+
+    </script>
+
+    <script>
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("scroll-up-btn").style.display = "block";
+            } else {
+                document.getElementById("scroll-up-btn").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+
+    </script>
+
+  </body>
+
+</html>
